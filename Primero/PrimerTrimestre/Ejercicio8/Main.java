@@ -22,7 +22,7 @@ public class Main {
         age = Integer.parseInt(sc.nextLine());
 
         if (age >= 18) {
-            System.out.println("Es usted mayor de edad");
+            System.out.println("Es us.ted mayor de edad");
         } else {
             System.out.println("No eres mayor de edad");
         }
