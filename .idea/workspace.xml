@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce6657c8-b32c-487d-93b1-5485e0864c54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaCourse.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Primero/Primer_Trimestre/Ejercicio1/Main.java" afterDir="false" />
+    <list default="true" id="ce6657c8-b32c-487d-93b1-5485e0864c54" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio6/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Ejercicio8/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Primero/Primer_Trimestre/Ejercicio1/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Rayelus5"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rayelus5/DAW-javacourse.git",
+    "accountId": "c5423cca-88f4-48fa-bb57-db8428b5fe87"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -38,11 +55,53 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Primero.PrimerTrimestre.Ejercicio7.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Primero.Primer_Trimestre.Introduccion" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Primero.PrimerTrimestre.Ejercicio7.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Primero.PrimerTrimestre.Ejercicio1.Main" />
+      <module name="JavaCourse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Primero.PrimerTrimestre.Ejercicio1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Primero.PrimerTrimestre.Ejercicio7.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Primero.PrimerTrimestre.Ejercicio7.Main" />
+      <module name="JavaCourse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Primero.PrimerTrimestre.Ejercicio7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Primero.PrimerTrimestre.Ejercicio7.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +111,27 @@
       <option name="presentableId" value="Default" />
       <updated>1727259308230</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1727259885808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727259885808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1727260087698</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727260087698</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>
