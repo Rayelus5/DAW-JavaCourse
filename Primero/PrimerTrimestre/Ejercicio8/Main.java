@@ -12,7 +12,7 @@ public class Main {
         *    <bloque de instrucciones>
         * }
         *
-        * */
+        */
 
         int age;
         Scanner sc;
