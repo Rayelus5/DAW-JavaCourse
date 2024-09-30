@@ -30,7 +30,7 @@ public class Main {
             System.out.println("0.  Salir");
             System.out.println("==========================");
             System.out.print("Selecciona una opción: ");
-            actID = scanner.nextInt();
+            actID = Integer.parseInt(scanner.nextLine());
             System.out.println("Ejecutando actividad...");
 
             switch (actID) {
@@ -131,7 +131,6 @@ public class Main {
         System.out.println("La suma de sus números es: " + (num1 + num2));
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -150,7 +149,6 @@ public class Main {
         System.out.println("El área del triángulo es: " + area);
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -172,7 +170,6 @@ public class Main {
         if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10 || nota4 < 0 || nota4 > 10) {
             System.out.println("Notas inválidas. Las notas deben estar entre 0 y 10.");
             //ABADONA LA EJECUCIÓN
-            scanner.nextLine();
             System.out.println("Presione cualquier tecla para continuar...");
             scanner.nextLine();
         }
@@ -183,7 +180,6 @@ public class Main {
         System.out.println("La media es: " + media);
         System.out.println("=======================");
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -206,7 +202,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -234,7 +229,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -258,7 +252,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -268,7 +261,8 @@ public class Main {
         System.out.println("Actividad 7 Ejecutada:");
         System.out.println("=======================");
         System.out.print("Ingrese la nota numérica (de 0 a 10): ");
-        double nota = scanner.nextDouble();
+        String entrada = scanner.nextLine().replaceAll(",",".");
+        double nota = Double.parseDouble(entrada);
 
         if (nota < 5) {
             System.out.println("Insuficiente");
@@ -283,7 +277,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -329,7 +322,6 @@ public class Main {
         System.out.println(num1 + " < " + num2 + " < " + num3);
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -353,7 +345,6 @@ public class Main {
         System.out.println("El número tiene " + contador + " cifras.");
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -392,7 +383,6 @@ public class Main {
         System.out.printf("La hora en el siguiente segundo es: %02d:%02d:%02d \n", horas, minutos, segundos);
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -452,7 +442,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
 
@@ -512,7 +501,6 @@ public class Main {
         diaSiguiente(dia, mes, año);
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
     }
@@ -545,7 +533,6 @@ public class Main {
 
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
     }
@@ -601,7 +588,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
     }
@@ -694,7 +680,6 @@ public class Main {
         }
 
         //ABADONA LA EJECUCIÓN
-        scanner.nextLine();
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
     }
