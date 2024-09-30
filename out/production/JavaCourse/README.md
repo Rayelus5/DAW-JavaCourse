@@ -9,7 +9,7 @@
 <p align="center">By Rayelus for CFGS of DAW</p><br>
 
 <h4 align="center">Un curso de Java de Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Web redactado por <a href="http://rayelus.com" target="_blank">Rayelus</a>.
-	<br><br>Impartido por Diego Terrón Macías en el I.E.S. Hermanos Machado (Dos Hermanas)
+	<br><br>Impartido por Diego Terrón Macías en el I.E.S. Hermanos Machado (Dos Hermanas).
 </h4>
 
 <p align="center">
@@ -145,7 +145,7 @@ $ cd DAW-javacourse
 <br><br>
 ## Important
 
-This software uses the following open source packages:
+This software uses the following packages:
 
 - [IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/download)
 - [JDK 23](https://www.oracle.com/java/technologies/downloads/)
@@ -166,6 +166,6 @@ This software uses the following open source packages:
 
 ## Credits
 
-> [RAYELUS.COM](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
+> [RAYELUS.COM](https://rayelus.com) &nbsp;&middot;&nbsp;
 > GitHub [@Rayelus5](https://github.com/Rayelus5) &nbsp;&middot;&nbsp;
 > Twitter [@rayelus5](https://x.com/rayelus5)

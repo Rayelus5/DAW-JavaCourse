@@ -133,6 +133,7 @@ public class Main {
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
+        scanner.nextLine();
 
     }
 
@@ -150,6 +151,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -182,6 +184,7 @@ public class Main {
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
+        scanner.nextLine();
 
     }
 
@@ -203,6 +206,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -231,6 +235,7 @@ public class Main {
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
+        scanner.nextLine();
 
     }
 
@@ -253,6 +258,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -278,6 +284,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -324,6 +331,7 @@ public class Main {
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
+        scanner.nextLine();
 
     }
 
@@ -346,6 +354,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -384,6 +393,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -440,6 +450,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
 
     }
@@ -500,6 +511,7 @@ public class Main {
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
         scanner.nextLine();
+        scanner.nextLine();
     }
 
     //ACTIVIDAD 13
@@ -531,6 +543,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
     }
 
@@ -586,6 +599,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
     }
 
@@ -678,6 +692,7 @@ public class Main {
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
+        scanner.nextLine();
         scanner.nextLine();
     }
 }
