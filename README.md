@@ -9,7 +9,7 @@
 <p align="center">By Rayelus for CFGS of DAW</p><br>
 
 <h4 align="center">Un curso de Java de Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Web redactado por <a href="http://rayelus.com" target="_blank">Rayelus</a>.
-	<br><br>Impartido por Diego Terrón Macías en el I.E.S. Hermanos Machado (Dos Hermanas)
+	<br><br>Impartido por Diego Terrón Macías en el I.E.S. Hermanos Machado (Dos Hermanas).
 </h4>
 
 <p align="center">
