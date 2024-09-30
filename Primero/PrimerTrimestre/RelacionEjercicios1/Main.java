@@ -9,7 +9,7 @@ public class Main {
         int actID;
 
         while (true) {
-            System.out.println("Menú de Actividades:");
+            System.out.println("[+] Menú de Actividades:");
             System.out.println("==========================");
             System.out.println("1.  Actividad 1");
             System.out.println("2.  Actividad 2");
