@@ -390,13 +390,13 @@ public class Main {
 
     //ACTIVIDAD 11
 
-    // Función para verificar si un año es bisiesto
-    public static boolean esBisiesto(int año) {
-        return año % 4 == 0 && (año % 100 != 0 || año % 400 == 0);
+    // Función para verificar si un age es bisiesto
+    public static boolean esBisiesto(int age) {
+        return age % 4 == 0 && (age % 100 != 0 || age % 400 == 0);
     }
 
     // Función para validar la fecha
-    public static boolean esFechaValida(int dia, int mes, int año) {
+    public static boolean esFechaValida(int dia, int mes, int age) {
         // Verificar que el mes esté entre 1 y 12
         if (mes < 1 || mes > 12) {
             return false;
@@ -405,18 +405,15 @@ public class Main {
         // Verificar los días según el mes
         int[] diasPorMes = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        // Si el año es bisiesto y el mes es febrero, ajustar los días del mes
-        if (esBisiesto(año) && mes == 2) {
-            diasPorMes[1] = 29; // Febrero en año bisiesto tiene 29 días
+        // Si el age es bisiesto y el mes es febrero, ajustar los días del mes
+        if (esBisiesto(age) && mes == 2) {
+            diasPorMes[1] = 29; // Febrero en age bisiesto tiene 29 días
         }
 
         // Verificar que el día esté en el rango válido para el mes correspondiente
-        if (dia < 1 || dia > diasPorMes[mes - 1]) {
-            return false;
-        }
+        return dia >= 1 && dia <= diasPorMes[mes - 1];
 
         // Si todos los chequeos son correctos, la fecha es válida
-        return true;
     }
 
     private static void act11() {
@@ -431,11 +428,11 @@ public class Main {
         System.out.print("Introduce el mes (MM): ");
         int mes = scanner.nextInt();
 
-        System.out.print("Introduce el año (AAAA): ");
-        int año = scanner.nextInt();
+        System.out.print("Introduce el age (AAAA): ");
+        int age = scanner.nextInt();
 
         // Validar la fecha
-        if (esFechaValida(dia, mes, año)) {
+        if (esFechaValida(dia, mes, age)) {
             System.out.println("La fecha es válida.");
         } else {
             System.out.println("La fecha es incorrecta.");
@@ -449,10 +446,10 @@ public class Main {
 
     //ACTIVIDAD 12
 
-    public static void diaSiguiente(int dia, int mes, int año) {
+    public static void diaSiguiente(int dia, int mes, int age) {
         int[] diasPorMes = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        if (esBisiesto(año) && mes == 2) {
+        if (esBisiesto(age) && mes == 2) {
             diasPorMes[1] = 29;
         }
 
@@ -463,22 +460,22 @@ public class Main {
             dia = 1; // Reiniciar día
             mes++;   // Incrementar mes
 
-            // Verificar si se pasa al siguiente año
+            // Verificar si se pasa al siguiente age
             if (mes > 12) {
                 mes = 1;   // Reiniciar mes
-                año++;    // Incrementar año
+                age++;    // Incrementar age
             }
         }
 
         // Mostrar el día siguiente
-        System.out.printf("La fecha del día siguiente es: %02d/%02d/%04d\n", dia, mes, año);
+        System.out.printf("La fecha del día siguiente es: %02d/%02d/%04d\n", dia, mes, age);
     }
 
     private static void act12() {
         System.out.println("Actividad 12 Ejecutada:");
 
         System.out.println("=======================");
-        int dia, mes, año;
+        int dia, mes, age;
 
         // Solicitar una fecha válida al usuario
         do {
@@ -488,17 +485,17 @@ public class Main {
             System.out.print("Introduce el mes (MM): ");
             mes = scanner.nextInt();
 
-            System.out.print("Introduce el año (AAAA): ");
-            año = scanner.nextInt();
+            System.out.print("Introduce el age (AAAA): ");
+            age = scanner.nextInt();
 
-            if (!esFechaValida(dia, mes, año)) {
+            if (!esFechaValida(dia, mes, age)) {
                 System.out.println("Fecha incorrecta. Por favor, introduce una fecha válida.");
             }
 
-        } while (!esFechaValida(dia, mes, año));
+        } while (!esFechaValida(dia, mes, age));
 
         // Calcular y mostrar el día siguiente
-        diaSiguiente(dia, mes, año);
+        diaSiguiente(dia, mes, age);
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
