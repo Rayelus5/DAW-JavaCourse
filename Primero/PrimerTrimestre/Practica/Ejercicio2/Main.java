@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Ejercicio2;
+package Primero.PrimerTrimestre.Practica.Ejercicio2;
 
 public class Main {
     public static void main(String[] args) {

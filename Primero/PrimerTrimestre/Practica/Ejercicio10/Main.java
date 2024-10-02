@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Ejercicio10;
+package Primero.PrimerTrimestre.Practica.Ejercicio10;
 
 import javax.swing.*;
 

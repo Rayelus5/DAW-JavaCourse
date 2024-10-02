@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Ejercicio9;
+package Primero.PrimerTrimestre.Practica.Ejercicio9;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -68,8 +68,16 @@ public class DVDLogoSimulator extends JFrame {
             public void run() {
                 DVDLogoSimulator simulator1 = new DVDLogoSimulator();
                 DVDLogoSimulator simulator2 = new DVDLogoSimulator();
+                DVDLogoSimulator simulator3 = new DVDLogoSimulator();
+                DVDLogoSimulator simulator4 = new DVDLogoSimulator();
+                DVDLogoSimulator simulator5 = new DVDLogoSimulator();
+                DVDLogoSimulator simulator6 = new DVDLogoSimulator();
                 simulator1.setVisible(true);
                 simulator2.setVisible(true);
+                simulator3.setVisible(true);
+                simulator4.setVisible(true);
+                simulator5.setVisible(true);
+                simulator6.setVisible(true);
             }
         });
     }

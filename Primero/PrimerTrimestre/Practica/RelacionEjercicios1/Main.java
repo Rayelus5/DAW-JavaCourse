@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.RelacionEjercicios1;
+package Primero.PrimerTrimestre.Practica.RelacionEjercicios1;
 
 import java.util.Scanner;
 
