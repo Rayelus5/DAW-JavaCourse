@@ -2,13 +2,20 @@ package Primero.PrimerTrimestre.Practica.RelacionEjercicios1;
 
 import java.util.Scanner;
 
+
+
 public class Main {
+
+
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
         int actID;
 
+
         while (true) {
+
+            limpiarConsola();
             System.out.println("[+] Menú de Actividades:");
             System.out.println("==========================");
             System.out.println("1.  Actividad 1");
@@ -695,4 +702,20 @@ public class Main {
         scanner.nextLine();
         scanner.nextLine();
     }
-}
+
+
+    public static void limpiarConsola() {
+        try {
+            if (System.getProperty("os.name").contains("Windows")) {
+                // Ejecuta el comando cls en Windows
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                // Ejecuta el comando clear en sistemas Unix/Linux/Mac
+                new ProcessBuilder("clear").inheritIO().start().waitFor();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    }
