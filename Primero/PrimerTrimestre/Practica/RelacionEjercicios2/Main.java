@@ -207,7 +207,30 @@ public class Main {
         System.out.println("Actividad 4 Ejecutada:");
 
         System.out.println("=======================");
+        int secreto = (int)(Math.random() * 100);
+        int num;
+        int intentos = 0;
 
+        System.out.print("Número: ");
+        num = Integer.parseInt(scanner.nextLine());
+        intentos++;
+
+        while (num!=secreto && intentos < 5) {
+            intentos++;
+            if (num>secreto)
+                System.out.println("Menor");
+            else
+                System.out.println("Mayor");
+
+            System.out.print("Número: ");
+            num = Integer.parseInt(scanner.nextLine());
+        }
+
+        if (intentos==5) {
+            System.out.println("Has perdido. El número era: " + secreto);
+        } else {
+            System.out.println("Acertaste");
+        }
 
 
         //ABADONA LA EJECUCIÓN
@@ -220,6 +243,26 @@ public class Main {
         System.out.println("Actividad 5 Ejecutada:");
 
         System.out.println("=======================");
+
+        int num;
+        int i = 1;
+
+        System.out.print("Número: ");
+        num = Integer.parseInt(scanner.nextLine());
+
+        if (num >= 0) {
+            while (i != num) {
+                System.out.println(i);
+                i++;
+            }
+        } else {
+            while (i != num) {
+                System.out.println(i);
+                i--;
+            }
+        }
+
+
 
 
 

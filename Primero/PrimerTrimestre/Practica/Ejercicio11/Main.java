@@ -49,4 +49,16 @@ public class Main {
         System.out.println("Número introducido: 0 (Saliendo del bucle)");
         System.out.println("Números introducidos en total: " + n);
     }
+
+    public static void bucle4() {
+        /* SINTAXIS del FOR
+
+        for ( <inicialización> ; <condinción> ; <incremento> ) {
+
+            // código a ejecutar
+
+        }
+
+         */
+    }
 }
