@@ -60,5 +60,10 @@ public class Main {
         }
 
          */
+
+        int i;
+        for(i=0; i<5 ; i++) {
+            System.out.println(i);
+        }
     }
 }
