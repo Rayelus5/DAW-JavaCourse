@@ -66,4 +66,21 @@ public class Main {
             System.out.println(i);
         }
     }
+
+    public static void bucle5() {
+        /* SINTAXIS del DO WHILE
+
+        do {
+        // BLOQUE
+        } while (<condición>);
+
+         */
+
+        int i = 0;
+
+        do {
+            System.out.println("Hola Mundo!");
+            i++;
+        } while (i<5);
+    }
 }
