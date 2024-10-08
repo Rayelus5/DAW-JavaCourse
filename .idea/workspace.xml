@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce6657c8-b32c-487d-93b1-5485e0864c54" name="Changes" comment="Update 7/10/24">
+    <list default="true" id="ce6657c8-b32c-487d-93b1-5485e0864c54" name="Changes" comment="Update 8/10/24">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primero/PrimerTrimestre/Practica/Ejercicio11/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Practica/Ejercicio11/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Primero/PrimerTrimestre/Practica/RelacionEjercicios2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Primero/PrimerTrimestre/Practica/RelacionEjercicios2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCourse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCourse/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728290144319</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update 8/10/24">
+      <option name="closed" value="true" />
+      <created>1728372962098</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728372962098</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +240,7 @@
     <MESSAGE value="Update 1/10/24" />
     <MESSAGE value="Update 2/10/24" />
     <MESSAGE value="Update 7/10/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 7/10/24" />
+    <MESSAGE value="Update 8/10/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 8/10/24" />
   </component>
 </project>
