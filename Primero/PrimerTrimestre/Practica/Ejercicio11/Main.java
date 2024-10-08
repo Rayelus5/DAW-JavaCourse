@@ -53,7 +53,7 @@ public class Main {
     public static void bucle4() {
         /* SINTAXIS del FOR
 
-        for ( <inicialización> ; <condinción> ; <incremento> ) {
+        for ( <inicialización> , <inicialización múltiple> ; <condinción> ; <incremento> ) {
 
             // código a ejecutar
 
