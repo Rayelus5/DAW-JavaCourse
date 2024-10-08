@@ -276,8 +276,11 @@ public class Main {
         System.out.println("Actividad 6 Ejecutada:");
 
         System.out.println("=======================");
+        int i;
 
-
+        for(i=500; i>=0;i-=2) {
+            System.out.println(i);
+        }
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
