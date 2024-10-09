@@ -291,8 +291,16 @@ public class Main {
     private static void act7() {
         System.out.println("Actividad 7 Ejecutada:");
         System.out.println("=======================");
+        String password;
+        do {
+
+            System.out.print("Password: ");
+            password = scanner.nextLine();
 
 
+        } while (!password.equals("osama"));
+
+        System.out.println("Contraseña correcta.");
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
