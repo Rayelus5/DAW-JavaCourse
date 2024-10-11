@@ -40,35 +40,76 @@
 	<img src="https://miro.medium.com/v2/resize:fit:1400/1*lhOax3cZATGZwEhG0uTYRA.gif">
 </p>
 
+
+> [!WARNING]
+> A la hora de querer modificar el nombre de los directorios/packages o clases deberás usar el Refractor de IntelliJ.
+> En otros IDEs será similar. Pero es importante para no tener errores a la hora de ejecutar los programas.
+
+
+> [!IMPORTANT]
+> La ruta de los archivos en este repositorio sigue la siguiente regla:
+
+- [📂] JavaCourse
+	- 	|-[📁] Primero
+		-	|-[📁] PrimerTrimestre
+			-	|- [📁] Practica
+				-	 |- [📁] Ejercicio1
+				-	 |- [📁] RelacionEjercicios
+				-	 |- [📁] Ejercicio_Examenes
+				-	 |- [📁] ...
+			- 	|- [📁] Tarea
+		- 	|-[📁] SegundoTrimestre
+		- 	|-[📁] TercerTrimestre
+
+	- 	|-[📁] Segundo
+
+<br><br><br>
+
+<!--
+
+> [!NOTE]
+> Hola
+
+> [!TIP]
+> Hola
+
+> [!WARNING]
+> Hola
+
+> [!CAUTION]
+> Hola
+
+-->
+
 ## Course Content
 
 Las realizaciones profesionales asociadas al módulo son las siguientes:
 
-* ### RA1.
+* ### 📚 RA1.
   - Reconoce la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.
 
-* ### RA2.
+* ### 📚 RA2.
   - Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos.
 
-* ### RA3.
+* ### 📚 RA3.
   - Escribe y depura código, analizando y utilizando las estructuras de control del lenguaje.
 
-* ### RA4.
+* ### 📚 RA4.
   - Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.
 
-* ### RA5.
+* ### 📚 RA5.
   - Realiza operaciones de entrada y salida de información, utilizando procedimientos específicos del lenguaje y librerías de clases.
 
-* ### RA6.
+* ### 📚 RA6.
   - Escribe programas que manipulen información seleccionando y utilizando tipos avanzados de datos.
 
-* ### RA7.
+* ### 📚 RA7.
   - Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.
 
-* ### RA8.
+* ### 📚 RA8.
   - Utiliza bases de datos orientadas a objetos, analizando sus características y aplicando técnicas para mantener la persistencia de la información.
 
-* ### RA9.
+* ### 📚 RA9.
   - Gestiona información almacenada en bases de datos relacionales manteniendo la integridad y consistencia de los datos.
 
 <br><br>
