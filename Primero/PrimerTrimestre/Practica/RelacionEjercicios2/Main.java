@@ -366,7 +366,17 @@ public class Main {
         System.out.println("Actividad 12 Ejecutada:");
 
         System.out.println("=======================");
+        int numero;
+        long producto = 1;
 
+        System.out.print("Introduce un número: ");
+        numero = Integer.parseInt(scanner.nextLine());
+
+        for(int i=1; i<=numero; i++) {
+            producto *= i;
+        }
+
+        System.out.println(producto);
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
@@ -377,7 +387,36 @@ public class Main {
         System.out.println("Actividad 13 Ejecutada:");
         System.out.println("=======================");
 
+        int contadorPositivos = 0;
+        int contadorNegativos = 0;
+        int contadorCeros = 0;
+        float sumaPositivos = 0;
+        float sumaNegativos = 0;
 
+        // Pedir 25 números al usuario
+        for (int i = 1; i <= 25; i++) {
+            System.out.print("Introduce el número " + i + ": ");
+            float numero = scanner.nextFloat();
+
+            if (numero > 0) {
+                sumaPositivos += numero;
+                contadorPositivos++;
+            } else if (numero < 0) {
+                sumaNegativos += numero;
+                contadorNegativos++;
+            } else {
+                contadorCeros++;
+            }
+        }
+
+        // Calcular la media de positivos y negativos
+        float mediaPositivos = (contadorPositivos > 0) ? (sumaPositivos / contadorPositivos) : 0;
+        float mediaNegativos = (contadorNegativos > 0) ? (sumaNegativos / contadorNegativos) : 0;
+
+        // Mostrar resultados
+        System.out.printf("Media de los números positivos: %.2f%n", mediaPositivos);
+        System.out.printf("Media de los números negativos: %.2f%n", mediaNegativos);
+        System.out.println("Cantidad de ceros introducidos: " + contadorCeros);
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
@@ -389,6 +428,18 @@ public class Main {
         System.out.println("Actividad 14 Ejecutada:");
         System.out.println("=======================");
 
+        int a=0,b=1,c=1;
+        int n;
+
+        System.out.print("¿Cuántos términos?: ");
+        n = Integer.parseInt(scanner.nextLine());
+
+        for(int i=0;i<n;i++) {
+            System.out.println(a);
+            a=b;
+            b=c;
+            c=a+b;
+        }
 
 
         //ABADONA LA EJECUCIÓN
