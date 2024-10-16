@@ -485,7 +485,16 @@ public class Main {
         System.out.println("Actividad 18 Ejecutada:");
         System.out.println("=======================");
 
-
+        String nombre;
+        String nombreMin;
+        String nombreMax;
+        int edad;
+        int edadMin;
+        int edadMax;
+        System.out.print("Dime tu nombre: ");
+        nombre = scanner.nextLine();
+        System.out.print("Dime la edad: ");
+        edad = Integer.parseInt(scanner.nextLine());
 
         //ABADONA LA EJECUCIÓN
         System.out.println("Presione cualquier tecla para continuar...");
