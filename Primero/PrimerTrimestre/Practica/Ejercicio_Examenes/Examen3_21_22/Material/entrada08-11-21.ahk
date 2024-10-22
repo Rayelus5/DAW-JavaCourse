@@ -1,4 +1,4 @@
-retardo = 250
+retardo = 200
 SetKeyDelay, 20
 
 ^d::
