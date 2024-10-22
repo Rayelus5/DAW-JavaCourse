@@ -38,6 +38,11 @@ public class Main {
                 System.out.print("¿Es de Protección Oficial? (S/N): ");
                 char proteccionOficial = sc.nextLine().charAt(0);
 
+                while(((proteccionOficial != 'S') && (proteccionOficial != 's')) && ((proteccionOficial != 'N') && (proteccionOficial != 'n'))) {
+                    System.out.print("¿Es de Protección Oficial? (S/N): ");
+                    proteccionOficial = sc.nextLine().charAt(0);
+                }
+
                 System.out.print("Introduce el número de viviendas de la promoción: ");
                 int numeroViviendas = sc.nextInt();
 
