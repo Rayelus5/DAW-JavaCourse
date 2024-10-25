@@ -14,13 +14,12 @@ public class Main {
         int productosQueBajanPrecio = 0;
         float menorPrecioAntesBF = Float.MAX_VALUE;
         String productoMenorPrecioAntesBF = "";
+        String nombreTienda;
 
         System.out.print("Ingrese el nombre de la tienda (o 'fin' para terminar): ");
-        String nombreTienda = scanner.nextLine();
+        nombreTienda = scanner.nextLine();
 
         while (!nombreTienda.equalsIgnoreCase("fin")) {
-            System.out.print("Ingrese el nombre de la tienda (o 'fin' para terminar): ");
-            nombreTienda = scanner.nextLine();
 
             totalTiendas++;
             System.out.print("¿Hace campaña para el Black Friday? (S/N): ");
@@ -68,6 +67,9 @@ public class Main {
             if (haceCampania == 'S' && productosEnEstaTienda > maxProductosCampania) {
                 maxProductosCampania = productosEnEstaTienda;
             }
+
+            System.out.print("Ingrese el nombre de la tienda (o 'fin' para terminar): ");
+            nombreTienda = scanner.nextLine();
         }
 
         // Mostrar los resultados
