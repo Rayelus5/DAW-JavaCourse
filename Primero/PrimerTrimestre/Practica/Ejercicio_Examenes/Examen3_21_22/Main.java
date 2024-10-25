@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen3_21_22;
+package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen3_21_22_Solucionado;
 
 import java.util.Scanner;
 
@@ -139,7 +139,5 @@ public class Main {
         } else {
             System.out.println("f) No hay localidades con al menos tres promociones.");
         }
-
-        sc.close();
     }
 }

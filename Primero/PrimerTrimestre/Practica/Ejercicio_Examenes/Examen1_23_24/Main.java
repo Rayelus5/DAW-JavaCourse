@@ -15,12 +15,12 @@ public class Main {
         float menorPrecioAntesBF = Float.MAX_VALUE;
         String productoMenorPrecioAntesBF = "";
 
-        while (true) {
+        System.out.print("Ingrese el nombre de la tienda (o 'fin' para terminar): ");
+        String nombreTienda = scanner.nextLine();
+
+        while (!nombreTienda.equalsIgnoreCase("fin")) {
             System.out.print("Ingrese el nombre de la tienda (o 'fin' para terminar): ");
-            String nombreTienda = scanner.nextLine();
-            if (nombreTienda.equals("fin")) {
-                break;
-            }
+            nombreTienda = scanner.nextLine();
 
             totalTiendas++;
             System.out.print("¿Hace campaña para el Black Friday? (S/N): ");
