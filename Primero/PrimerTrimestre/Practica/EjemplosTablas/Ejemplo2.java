@@ -10,9 +10,9 @@ public class Ejemplo2 {
 
         tNum[3] = 7;
 
-        for(int n:tNum)
-            System.out.println(n);
+        for(int n:tNum) {
+            System.out.print(n + " - ");
 
-
+        }
     }
 }

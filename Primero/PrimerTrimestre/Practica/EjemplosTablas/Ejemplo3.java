@@ -6,6 +6,16 @@ public class Ejemplo3 {
         //Declaración e inicialización
         int tNum[] =  new int[12];
 
+        /**
+         * DECLARACIÓN:   float tabla[];
+         *
+         * INICIALIZACIÓN: tabla = new float[30];
+         *
+         * ---
+         *
+         * AMBOS: float tabla[] = new float[30];
+         */
+
         int valor=0;
         int posición = 0;
 
@@ -22,3 +32,5 @@ public class Ejemplo3 {
 
     }
 }
+
+
