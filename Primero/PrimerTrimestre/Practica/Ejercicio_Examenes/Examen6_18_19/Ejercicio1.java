@@ -2,11 +2,46 @@ package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen6_18_19;
 
 import java.util.Scanner;
 
+/*
+En la Oficina de Estudios Académicos Hermanos Machado (OEAHM),
+se pretende estudiar una serie de datos sobre las notas de los alumnos de varias clases. Para ello se debe
+realizar un programa en Java que permita la introducción de datos, y posteriormente muestre unos
+resultados.
+
+El programa debe permitir al usuario la introducción de una serie de clases y sus alumnos y notas,
+de la siguiente forma:
+Para cada clase, se introducirá en primer lugar su nombre (se sabrá que se desea terminar de
+introducir datos cuando el nombre de la misma sea "fin") y a continuación el nombre del tutor. Después
+se introducirán los datos de los alumnos de esa clase, de la forma: nombre del alumno, nota obtenida en
+el control, nota obtenida en el examen final y nota de clase (son números enteros). La serie de alumnos
+de una clase terminará cuando el nombre sea "fin". Para calcular la nota global de un alumno se hace el
+60% del examen final, el 30% del control y el 10% de la nota de clase. (1 punto la petición correcta de
+datos).
+
+Los resultados que se deben mostrar al finalizar la introducción de datos son:
+
+a) (1 punto) Nombre de la clase con mayor número neto de alumnos con la nota global aprobada.
+
+b) (1,5 puntos) Nombre del tutor de la clase con menor porcentaje de suspensos (nota global), y
+ese porcentaje.
+
+c) (1 punto) Número de clases en las que el número de aprobados (nota global) es mayor que el
+de suspensos.
+
+d) (1 punto) Porcentaje de alumnos del centro con la nota del examen final (no la global, sino la
+del examen final) aprobada.
+
+e) (1,5 puntos) Si hubiera alguna clase en la que los tres primeros alumnos introducidos tienen la
+nota del control aprobada (no la global), se debe indicar con un mensaje.
+ */
+
 public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Variables para almacenar los resultados requeridos
+        String nombreClase;
+        String nombreAlumno;
         String claseConMayorAprobados = "";
         int maxAprobados = 0;
 
@@ -18,14 +53,14 @@ public class Ejercicio1 {
         int totalAprobadosExamenFinalCentro = 0;
         boolean tresPrimerosAprobados = false;
 
-        // Ingreso de datos para cada clase
-        while (true) {
-            System.out.print("Ingrese el nombre de la clase (o 'fin' para terminar): ");
-            String nombreClase = scanner.nextLine();
-            if (nombreClase.equalsIgnoreCase("fin")) break;
+        int notaClase, notaControl, notaExamenFinal;
 
-            System.out.print("Ingrese el nombre del tutor: ");
-            String nombreTutor = scanner.nextLine();
+
+        System.out.print("Ingrese el nombre de la clase (o 'fin' para terminar): ");
+        nombreClase = scanner.nextLine();
+
+        // Ingreso de datos para cada clase
+        while (!nombreClase.equalsIgnoreCase("fin")) {
 
             // Variables para la clase actual
             int numAlumnos = 0;
@@ -34,21 +69,24 @@ public class Ejercicio1 {
             int aprobadosExamenFinalClase = 0;
             boolean primerosTresAprobadosControl = true;
 
+            System.out.print("Ingrese el nombre del tutor: ");
+            String nombreTutor = scanner.nextLine();
+
+            System.out.print("Ingrese el nombre del alumno (o 'fin' para terminar): ");
+            nombreAlumno = scanner.nextLine();
+
             // Ingreso de datos para cada alumno en la clase
-            for (int i = 1; ; i++) {
-                System.out.print("Ingrese el nombre del alumno (o 'fin' para terminar): ");
-                String nombreAlumno = scanner.nextLine();
-                if (nombreAlumno.equalsIgnoreCase("fin")) break;
+            for (int i = 1; !nombreAlumno.equalsIgnoreCase("fin") ; i++) {
 
                 System.out.print("Ingrese la nota del control: ");
-                int notaControl = scanner.nextInt();
+                notaControl = Integer.parseInt(scanner.nextLine());
 
                 System.out.print("Ingrese la nota del examen final: ");
-                int notaExamenFinal = scanner.nextInt();
+                notaExamenFinal = Integer.parseInt(scanner.nextLine());
 
                 System.out.print("Ingrese la nota de clase: ");
-                int notaClase = scanner.nextInt();
-                scanner.nextLine();  // Limpiar el buffer de entrada
+                notaClase = Integer.parseInt(scanner.nextLine());
+
 
                 numAlumnos++;
                 totalAlumnosCentro++;
@@ -72,7 +110,12 @@ public class Ejercicio1 {
                 if (i <= 3 && notaControl < 5) {
                     primerosTresAprobadosControl = false;
                 }
-            }
+
+                System.out.print("Ingrese el nombre del alumno (o 'fin' para terminar): ");
+                nombreAlumno = scanner.nextLine();
+
+            } //FIN FOR
+
 
             // Actualizar resultados según los datos de la clase actual
             if (aprobadosGlobalClase > maxAprobados) {
@@ -93,7 +136,10 @@ public class Ejercicio1 {
             if (numAlumnos >= 3 && primerosTresAprobadosControl) {
                 tresPrimerosAprobados = true;
             }
-        }
+
+            System.out.print("Ingrese el nombre de la clase (o 'fin' para terminar): ");
+            nombreClase = scanner.nextLine();
+        } //FIN WHILE
 
         // Cálculo final para el porcentaje de alumnos aprobados en el examen final
         double porcentajeAprobadosExamenFinalCentro = (totalAlumnosCentro > 0) ? (double) totalAprobadosExamenFinalCentro / totalAlumnosCentro * 100 : 0;

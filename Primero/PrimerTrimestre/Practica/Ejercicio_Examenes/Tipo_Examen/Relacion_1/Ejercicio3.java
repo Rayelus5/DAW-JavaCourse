@@ -2,6 +2,23 @@ package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Tipo_Examen.Relacion
 
 import java.util.Scanner;
 
+/*
+Una empresa fabrica motores de automóviles. Se pretende contabilizar las unidades
+fabricadas cada mes. Para ello, disponemos del número de motores que se ha fabricado
+cada día. Realizar un programa en Java que:
+
+- Pida el número del mes que se va a introducir (sólo se van a introducir datos de un mes).
+
+- Para cada día de ese mes debe pedir el número de piezas que se ha fabricado.
+Sabemos que en un día nunca se van a fabricar más de 1000 piezas. No todos los
+meses tienen igual número de días; consideramos febrero con 28 días.
+
+- Debe mostrarse al final: Qué día se fabricaron más piezas. Cuál fue el mínimo de
+piezas fabricadas. Cuántos motores se han fabricado en el mes. Si algún día se ha
+fabricado menos de 300 piezas, debe indicarse al final con el mensaje: “Existen días
+por debajo del mínimo”.
+ */
+
 public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -2,6 +2,22 @@ package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Tipo_Examen.Relacion
 
 import java.util.Scanner;
 
+/*
+En un centro educativo, en un determinado nivel existen 4 grupos: A, B, C y D.
+
+El grupo A tiene 25 alumnos, el B tiene 28, el C tiene 31 y el D tiene 29.
+Para cada alumno disponemos de las notas del primer, segundo y tercer parcial.
+Realizar un programa en Java que:
+
+- Pida la letra del grupo que se va a introducir (sólo se va a introducir un grupo).
+
+- Para ese grupo, pida para cada alumno el nombre, la nota del primer parcial, del segundo y del tercero.
+
+- Debe mostrarse al final: El nombre del alumno con mayor nota media (media de los tres parciales).
+Cuántos alumnos tienen la nota media suspensa. Si existe algún alumno con nota mayor o igual que 9,
+debe indicarse al final con el mensaje: “Existen sobresalientes”
+ */
+
 public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

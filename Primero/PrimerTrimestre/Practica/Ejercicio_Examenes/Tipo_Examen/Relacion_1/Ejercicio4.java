@@ -2,6 +2,26 @@ package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Tipo_Examen.Relacion
 
 import java.util.Scanner;
 
+/*
+Un país centroamericano se encuentra dividido en cuatro regiones autonómicas. La
+región número 1 tiene 10 provincias, la número 2 tiene 4 provincias, la 3 tiene 6 provincias,
+y la 4 sólo 1 provincia. Se pretende contabilizar los votos que se han efectuado en una de
+las autonomías. Realiza un programa en Java que:
+
+- Pida el número de región del que se van a introducir datos (sólo se van a introducir
+datos de una autonomía).
+
+- Pedir, para cada provincia de esa región, el nombre de la provincia, el número de
+votos obtenido por el partido “A”, número de votos del partido “B”, y número de
+abstenciones.
+
+- Debe mostrarse al final: Porcentaje de votos totales y de abstención en la región.
+Nombre de la provincia donde el partido “A” ha obtenido más votos, y donde el
+partido “B” ha obtenido más votos. Si en alguna provincia el número de
+abstenciones es mayor de 100.000, debe mostrarse al final el mensaje: “Alta
+abstención”.
+ */
+
 public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
