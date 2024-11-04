@@ -2,6 +2,8 @@ package Primero.PrimerTrimestre.Practica.Ejercicio8;
 
 import java.util.Scanner;
 
+@SuppressWarnings("SpellCheckingInspection")
+
 public class Main {
     public static void main(String[] args) {
         /*

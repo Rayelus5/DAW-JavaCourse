@@ -2,7 +2,10 @@ package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen6_18_19;
 
 import java.util.Scanner;
 
+@SuppressWarnings("SpellCheckingInspection")
+
 /*
+
 En la Oficina de Estudios Académicos Hermanos Machado (OEAHM),
 se pretende estudiar una serie de datos sobre las notas de los alumnos de varias clases. Para ello se debe
 realizar un programa en Java que permita la introducción de datos, y posteriormente muestre unos
@@ -34,7 +37,7 @@ del examen final) aprobada.
 e) (1,5 puntos) Si hubiera alguna clase en la que los tres primeros alumnos introducidos tienen la
 nota del control aprobada (no la global), se debe indicar con un mensaje.
 
- */
+*/
 
 public class Ejercicio1 {
     public static void main(String[] args) {

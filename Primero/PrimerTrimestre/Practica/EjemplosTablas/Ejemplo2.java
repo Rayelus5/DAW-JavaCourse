@@ -1,5 +1,7 @@
 package Primero.PrimerTrimestre.Practica.EjemplosTablas;
 
+@SuppressWarnings("SpellCheckingInspection")
+
 public class Ejemplo2 {
     public static void main(String[] args) {
         //Declaración
