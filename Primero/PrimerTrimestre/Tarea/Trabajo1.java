@@ -17,8 +17,8 @@ public class Trabajo1 {
 
         // Pedir al usuario que introduzca una frase o párrafo
         System.out.print("Introduce una frase o párrafo: ");
-        // Replazar las comas, puntos, punto y comas ... signos en general
-        frase = scanner.nextLine().replaceAll("[.,:;!¡?¿()#%$&/={}*+^<>·]", "");
+        // Replaza cualquier cosa que no sea letras minúsculas y mayúsculas (incluyendo la ñ), números, y espacios.
+        frase = scanner.nextLine().replaceAll("[^a-zA-Z0-9ñ\\s]", "");
 
 
         // Creamos un nuevo scanner para leer cada palabra de la variable frase
