@@ -190,9 +190,9 @@ public class Control1 {
         String estadosMayorHabitantes = estadoMayorHabitantes1 + ", " + estadoMayorHabitantes2 + " y " + estadoMayorHabitantes3;
 
 
-        // ========================
-        // Mostramos los resultados
-        // ========================
+        // ======================== //
+        // Mostramos los resultados //
+        // ======================== //
 
         System.out.println("A. Promedio de votos del partido VERDE: "+promedioVotosVerde);
         System.out.println("B. En el estado "+nombreEstadoVentajaRepu+" el partido Republicano ha obtenido "+mayorDiferenciaVotosRepu+" más de ventaja.");
