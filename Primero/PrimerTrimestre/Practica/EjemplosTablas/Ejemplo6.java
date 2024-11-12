@@ -15,7 +15,7 @@ public class Ejemplo6 {
         String res = "";
 
         nombre = JOptionPane.showInputDialog("Nombre: ");
-        while (!nombre.equalsIgnoreCase("fin")) {
+        while ((!nombre.equalsIgnoreCase("fin")) || (nElem != 19)) {
             nota = Integer.parseInt(JOptionPane.showInputDialog("Nota: "));
             tNombres[nElem] = nombre;
             tNotas[nElem] = nota;
