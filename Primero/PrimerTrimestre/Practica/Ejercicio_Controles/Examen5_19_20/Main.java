@@ -1,8 +1,6 @@
-package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen5_19_20;
+package Primero.PrimerTrimestre.Practica.Ejercicio_Controles.Examen5_19_20;
 
 import java.util.Scanner;
-
-import javax.swing.JOptionPane;
 
 public class Main
 {

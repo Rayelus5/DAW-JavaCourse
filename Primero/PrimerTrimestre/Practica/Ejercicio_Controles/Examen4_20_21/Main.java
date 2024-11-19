@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen4_20_21;
+package Primero.PrimerTrimestre.Practica.Ejercicio_Controles.Examen4_20_21;
 
 import java.util.Scanner;
 

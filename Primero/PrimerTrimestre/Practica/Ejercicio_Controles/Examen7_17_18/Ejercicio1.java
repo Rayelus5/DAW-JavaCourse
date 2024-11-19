@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Examen7_17_18;
+package Primero.PrimerTrimestre.Practica.Ejercicio_Controles.Examen7_17_18;
 
 import java.util.ArrayList;
 import java.util.Scanner;

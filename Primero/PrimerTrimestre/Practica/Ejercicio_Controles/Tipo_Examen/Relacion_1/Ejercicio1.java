@@ -1,4 +1,4 @@
-package Primero.PrimerTrimestre.Practica.Ejercicio_Examenes.Tipo_Examen.Relacion_1;
+package Primero.PrimerTrimestre.Practica.Ejercicio_Controles.Tipo_Examen.Relacion_1;
 
 import java.util.Scanner;
 
