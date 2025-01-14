@@ -50,9 +50,10 @@ public class LineaFerrea
 		this.maquinistas = tNueva;
 	}
 
-	public long totalCargaDeProducto(int numTren, String descripcion)
-	{
-		return 0;
+	public long totalCargaDeProducto(int numTren, String descripcion) {
+		long total = 0;
+
+		return total;
 	}
 
 	public Tren[] trenesConducidosPor(String nombreMaquinista)
@@ -66,8 +67,18 @@ public class LineaFerrea
 		return 0;
 	}
 
-	public boolean hayProblemas()
-	{
+	public boolean hayProblemas() {
+		for(Tren t:this.trenes) {
+			long sumaCargas = 0;
+
+			for (Vagon v:t.getVagones()) {
+				for (Carga c:v.cargas) {
+					sumaCargas += c.getKilos();
+				}
+			}
+			if (sumaCargas > t.getLocomotora().getKgsCargaMax())
+				return true;
+		}
 		return false;
 	}
 
