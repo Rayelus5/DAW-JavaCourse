@@ -53,6 +53,12 @@ public class LineaFerrea
 	public long totalCargaDeProducto(int numTren, String descripcion) {
 		long total = 0;
 
+			for (Tren t : this.trenes)
+				if (t.getNumero() == numTren)
+					for (Vagon v : t.getVagones())
+						for (Carga c : v.getCargas())
+							if (c.getDescripcion().equals(descripcion))
+								total += c.getKilos();
 		return total;
 	}
 
@@ -64,6 +70,14 @@ public class LineaFerrea
 	
 	public int numMaquinistasConducenAlMenos(int numTrenes)
 	{
+		int numMaquinistas=0;
+
+		for(Maquinista m:this.maquinistas) {
+			int numConducidosPorM = 0;
+			for (Tren t:this.trenes)
+				if (t.getMaquinista().equals(m))
+					numConducidosPorM++;
+		}
 		return 0;
 	}
 
@@ -85,6 +99,19 @@ public class LineaFerrea
 
 	public void eliminaVagonesConCargaDelTren(String descripcionCarga, int numTren)
 	{
+		Tren ficticio;
+		ficticio = new Tren(0,null,null);
+
+		for (Tren t : this.trenes)
+			if (t.getNumero() == numTren)
+				for (Vagon v : t.getVagones()) {
+					boolean eliminarVagon = false;
+					for (int i=0;i<v.getCargas().length && !eliminarVagon; i++)
+						if (v.getCargas()[i].getDescripcion().equals(descripcionCarga))
+							eliminarVagon = true;
+					if (eliminarVagon == false)
+						ficticio.anadeVagon(v);
+				}
 	}
 
 	public Locomotora[] locomotorasQuePuedenLlevar(Vagon[] vagones)
