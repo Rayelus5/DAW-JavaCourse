@@ -15,7 +15,7 @@ public class Club
 		Miembro[] tNueva = Arrays.copyOf(tMiembros, tMiembros.length+1);
 		tNueva[tMiembros.length] = miembro;
 		this.tMiembros = tNueva;
-	}
+	} 
 
 	public Miembro[] gettMiembros()
 	{
