@@ -37,7 +37,11 @@ public class Clase
 	
 	public boolean tieneMetodosDuplicados()
 	{
-		return true;		
+		for (int i = 0; i < this.tMetodos.length - 1; i++)
+			for (int j = i+1; j < this.tMetodos.length ; j++)
+				if(this.tMetodos[i].equals(this.tMetodos[j]))
+					return true;
+		return false;
 	}
 	
 	public boolean esMasCompleja(int complejidadMin)
@@ -47,7 +51,14 @@ public class Clase
 	
 	public Metodo[] getMetodosQueUsan(String tipo)
 	{
-		return null;
+		Clase ficticia = new Clase ("");
+		for(Metodo m : this.tMetodos)
+			for(Definicion d : m.gettParametros())
+				if(d.getTipo().equals(tipo)) {
+					ficticia.anadeMetodo(m);
+					break;
+				}
+        return ficticia.tMetodos;
 	}
 
 	@Override
