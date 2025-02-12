@@ -1,4 +1,6 @@
 package Primero.SegundoTrimestre.Practica.POO.ControlPOO_21_22.fuentes;
+import java.util.Arrays;
+
 public class LineaFerrea
 {
 	Tren[] trenes;
@@ -50,73 +52,107 @@ public class LineaFerrea
 		this.maquinistas = tNueva;
 	}
 
-	public long totalCargaDeProducto(int numTren, String descripcion) {
+	public long totalCargaDeProducto(int numTren, String descripcion)
+	{
 		long total = 0;
+		for(Tren t:this.trenes)
+			if(t.getNumero() == numTren)
+				for(Vagon v:t.getVagones())
+					for(Carga c:v.getCargas())
+						if(c.getDescripcion().equals(descripcion))
+							total += c.getKilos();
 
-			for (Tren t : this.trenes)
-				if (t.getNumero() == numTren)
-					for (Vagon v : t.getVagones())
-						for (Carga c : v.getCargas())
-							if (c.getDescripcion().equals(descripcion))
-								total += c.getKilos();
 		return total;
 	}
 
 	public Tren[] trenesConducidosPor(String nombreMaquinista)
 	{
-		return new Tren[0];
+		Tren[] tablaADevolver;
+		tablaADevolver = new Tren[0];
+
+		for(Tren t:this.trenes)
+			if(t.getMaquinista().getNombre().equals(nombreMaquinista))
+			//añadirlo a la tabla
+			{
+				tablaADevolver =
+						Arrays.copyOf(tablaADevolver, tablaADevolver.length+1);
+				tablaADevolver[tablaADevolver.length-1]=t;
+			}
+
+		return tablaADevolver;
 	}
-	
-	
+
+
 	public int numMaquinistasConducenAlMenos(int numTrenes)
 	{
 		int numMaquinistas=0;
 
-		for(Maquinista m:this.maquinistas) {
+		for(Maquinista m:this.maquinistas)
+		{
 			int numConducidosPorM = 0;
-			for (Tren t:this.trenes)
-				if (t.getMaquinista().equals(m))
+			for(Tren t:this.trenes)
+				if(t.getMaquinista().getNombre().equals(m.getNombre()))
 					numConducidosPorM++;
+			if(numConducidosPorM >= numTrenes)
+				numMaquinistas++;
 		}
-		return 0;
+
+		return numMaquinistas;
 	}
 
-	public boolean hayProblemas() {
-		for(Tren t:this.trenes) {
+	public boolean hayProblemas()
+	{
+		for(Tren t:this.trenes)
+		{
 			long sumaCargas = 0;
-
-			for (Vagon v:t.getVagones()) {
-				for (Carga c:v.cargas) {
-					sumaCargas += c.getKilos();
-				}
-			}
-			if (sumaCargas > t.getLocomotora().getKgsCargaMax())
+			for(Vagon v:t.getVagones())
+				for(Carga c:v.cargas)
+					sumaCargas+=c.getKilos();
+			if(sumaCargas > t.getLocomotora().getKgsCargaMax())
 				return true;
 		}
+
 		return false;
 	}
 
 
 	public void eliminaVagonesConCargaDelTren(String descripcionCarga, int numTren)
 	{
-		Tren ficticio;
-		ficticio = new Tren(0,null,null);
+		Tren ficticio = new Tren(0,null,null);
 
-		for (Tren t : this.trenes)
-			if (t.getNumero() == numTren)
-				for (Vagon v : t.getVagones()) {
+		for(Tren t:this.trenes)
+		{
+			if(t.getNumero() == numTren)
+			{
+				for(Vagon v:t.getVagones())
+				{
 					boolean eliminarVagon = false;
-					for (int i=0;i<v.getCargas().length && !eliminarVagon; i++)
-						if (v.getCargas()[i].getDescripcion().equals(descripcionCarga))
+					for(Carga c:v.getCargas())
+						if(c.getDescripcion().equals(descripcionCarga))
 							eliminarVagon = true;
-					if (eliminarVagon == false)
+					if(eliminarVagon == false)
 						ficticio.anadeVagon(v);
 				}
+				t.setVagones(ficticio.getVagones());
+			}
+		}
 	}
 
 	public Locomotora[] locomotorasQuePuedenLlevar(Vagon[] vagones)
 	{
-    return new Locomotora[0];
+		long totalCarga=0;
+
+		for(Vagon v:vagones)
+			for(Carga c:v.getCargas())
+				totalCarga += c.getKilos();
+
+		LineaFerrea ficticia = new LineaFerrea();
+
+		for(Locomotora l:this.locomotoras)
+			if(l.getKgsCargaMax() >= totalCarga)
+				ficticia.anadeLocomotora(l);
+
+		return ficticia.locomotoras;
 	}
 
 }
